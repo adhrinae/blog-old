@@ -65,8 +65,8 @@
       "component---src-templates-tags-js-8632dec7ce908e79a41e.js.map"
     ],
     "path---tags": [
-      "path---tags-8783caad17b5b6cec0f1.js",
-      "path---tags-8783caad17b5b6cec0f1.js.map"
+      "path---tags-238babc380901b7c2627.js",
+      "path---tags-238babc380901b7c2627.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -77,8 +77,8 @@
       "path---posts-the-world-needs-another-post-about-dependency-injection-in-ruby-kor-ddfd58086970afd1a0a3.js.map"
     ],
     "path---tags-javascript": [
-      "path---tags-javascript-c4624e375242dcf4165e.js",
-      "path---tags-javascript-c4624e375242dcf4165e.js.map"
+      "path---tags-javascript-a4c3dc89e79ed4d68111.js",
+      "path---tags-javascript-a4c3dc89e79ed4d68111.js.map"
     ],
     "path---posts-javascript-roadmap-questions": [
       "path---posts-javascript-roadmap-questions-6d31df48b47e1f448aa2.js",
@@ -95,6 +95,10 @@
     "path---tags-react": [
       "path---tags-react-6ddb4069a2a09690a439.js",
       "path---tags-react-6ddb4069a2a09690a439.js.map"
+    ],
+    "path---posts-jsr-questions-answers": [
+      "path---posts-jsr-questions-answers-125498d891f64862af4e.js",
+      "path---posts-jsr-questions-answers-125498d891f64862af4e.js.map"
     ],
     "path---tags-debugging": [
       "path---tags-debugging-34a219d26d07c0afd7f2.js",
@@ -157,8 +161,8 @@
       "path---tags-reading-1433edfeb725d25382cd.js.map"
     ],
     "path---index": [
-      "path---index-a79fb5ca7581ad9191cf.js",
-      "path---index-a79fb5ca7581ad9191cf.js.map"
+      "path---index-91d290a11fc88255ff3d.js",
+      "path---index-91d290a11fc88255ff3d.js.map"
     ],
     "path---tags-rails": [
       "path---tags-rails-5eca84a9a83841e5f7f2.js",
@@ -177,8 +181,8 @@
       "path---tags-sinatra-5fb55bb9e5f890a7fb25.js.map"
     ],
     "commons": [
-      "commons-d29f7fa1ad9231578f4a.js",
-      "commons-d29f7fa1ad9231578f4a.js.map"
+      "commons-64005d93f8d5be45e350.js",
+      "commons-64005d93f8d5be45e350.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -209,9 +213,9 @@
       "path---posts-learning-by-helping-kor-d7b1196ccab5b2a2140b.js.map"
     ],
     "app": [
-      "app-4affca2595ed678e2319.js",
+      "app-7fdecacb61b277bb0b13.js",
       "build-js-styles.css",
-      "app-4affca2595ed678e2319.js.map",
+      "app-7fdecacb61b277bb0b13.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-translation": [
