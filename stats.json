@@ -1,262 +1,270 @@
 {
   "assetsByChunkName": {
     "path---posts-mastering-ruby-blocks-in-less-than-5-minutes-kor": [
-      "path---posts-mastering-ruby-blocks-in-less-than-5-minutes-kor-68393fe14c57fb0afcb7.js",
-      "path---posts-mastering-ruby-blocks-in-less-than-5-minutes-kor-68393fe14c57fb0afcb7.js.map"
+      "path---posts-mastering-ruby-blocks-in-less-than-5-minutes-kor-6e6c7e675d96fa145bae.js",
+      "path---posts-mastering-ruby-blocks-in-less-than-5-minutes-kor-6e6c7e675d96fa145bae.js.map"
     ],
     "path---posts-four-nos-of-serious-code-reviewer-kor": [
-      "path---posts-four-nos-of-serious-code-reviewer-kor-2e4563c37df75f37f0e3.js",
-      "path---posts-four-nos-of-serious-code-reviewer-kor-2e4563c37df75f37f0e3.js.map"
+      "path---posts-four-nos-of-serious-code-reviewer-kor-21caba863ae70823f780.js",
+      "path---posts-four-nos-of-serious-code-reviewer-kor-21caba863ae70823f780.js.map"
     ],
     "path---tags-python": [
-      "path---tags-python-2d08d1924788fac025e7.js",
-      "path---tags-python-2d08d1924788fac025e7.js.map"
+      "path---tags-python-23c826d0a566be4e99bb.js",
+      "path---tags-python-23c826d0a566be4e99bb.js.map"
     ],
     "path---posts-isolate-global-state-kor": [
-      "path---posts-isolate-global-state-kor-6c13b2e1339de84759d9.js",
-      "path---posts-isolate-global-state-kor-6c13b2e1339de84759d9.js.map"
+      "path---posts-isolate-global-state-kor-d925cd9e09f359b44dab.js",
+      "path---posts-isolate-global-state-kor-d925cd9e09f359b44dab.js.map"
     ],
     "path---tags-programming": [
-      "path---tags-programming-2a9978f5b86c2ea4d71c.js",
-      "path---tags-programming-2a9978f5b86c2ea4d71c.js.map"
+      "path---tags-programming-40ce73182ce962aff428.js",
+      "path---tags-programming-40ce73182ce962aff428.js.map"
     ],
     "path---posts-hanami-vuejs-moneybook-api-server": [
-      "path---posts-hanami-vuejs-moneybook-api-server-f4181c82db20fef1aa11.js",
-      "path---posts-hanami-vuejs-moneybook-api-server-f4181c82db20fef1aa11.js.map"
+      "path---posts-hanami-vuejs-moneybook-api-server-ec4161609c422f40dc7e.js",
+      "path---posts-hanami-vuejs-moneybook-api-server-ec4161609c422f40dc7e.js.map"
     ],
     "path---posts-the-penguin-that-cannot-fly-kor": [
-      "path---posts-the-penguin-that-cannot-fly-kor-1c9f3510a88754e07125.js",
-      "path---posts-the-penguin-that-cannot-fly-kor-1c9f3510a88754e07125.js.map"
+      "path---posts-the-penguin-that-cannot-fly-kor-2a993affe0565afe8ddd.js",
+      "path---posts-the-penguin-that-cannot-fly-kor-2a993affe0565afe8ddd.js.map"
     ],
     "path---posts-understanding-taming-the-meta-language-kor": [
-      "path---posts-understanding-taming-the-meta-language-kor-7f07682afed53da4f411.js",
-      "path---posts-understanding-taming-the-meta-language-kor-7f07682afed53da4f411.js.map"
+      "path---posts-understanding-taming-the-meta-language-kor-590a917e2169d03fcd1b.js",
+      "path---posts-understanding-taming-the-meta-language-kor-590a917e2169d03fcd1b.js.map"
     ],
     "path---posts-markdown-with-dropbox-workflow": [
-      "path---posts-markdown-with-dropbox-workflow-638138b884a339535e13.js",
-      "path---posts-markdown-with-dropbox-workflow-638138b884a339535e13.js.map"
+      "path---posts-markdown-with-dropbox-workflow-9b621f1a3fdc57238624.js",
+      "path---posts-markdown-with-dropbox-workflow-9b621f1a3fdc57238624.js.map"
     ],
     "path---posts-hanami-introduction": [
-      "path---posts-hanami-introduction-e37102c4b8d1d406ccfa.js",
-      "path---posts-hanami-introduction-e37102c4b8d1d406ccfa.js.map"
+      "path---posts-hanami-introduction-68091551a8d2213034b5.js",
+      "path---posts-hanami-introduction-68091551a8d2213034b5.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-ec0666f12db25ca665fc.js",
       "component---src-pages-index-js-ec0666f12db25ca665fc.js.map"
     ],
     "path---posts-how-to-avoid-inheritance-in-ruby-kor": [
-      "path---posts-how-to-avoid-inheritance-in-ruby-kor-626a77c7ef7efeabdcf8.js",
-      "path---posts-how-to-avoid-inheritance-in-ruby-kor-626a77c7ef7efeabdcf8.js.map"
+      "path---posts-how-to-avoid-inheritance-in-ruby-kor-176318134d4149002698.js",
+      "path---posts-how-to-avoid-inheritance-in-ruby-kor-176318134d4149002698.js.map"
     ],
     "path---tags-oss": [
-      "path---tags-oss-3aa4833c657fb6113ec0.js",
-      "path---tags-oss-3aa4833c657fb6113ec0.js.map"
+      "path---tags-oss-544a0694bdbc865ee042.js",
+      "path---tags-oss-544a0694bdbc865ee042.js.map"
     ],
     "path---tags-learning": [
-      "path---tags-learning-4f0a4edbe34778c561ac.js",
-      "path---tags-learning-4f0a4edbe34778c561ac.js.map"
+      "path---tags-learning-e22aefe1f5f5b843ede3.js",
+      "path---tags-learning-e22aefe1f5f5b843ede3.js.map"
     ],
     "path---tags-markdown": [
-      "path---tags-markdown-4d0cbf7978112cdbd38a.js",
-      "path---tags-markdown-4d0cbf7978112cdbd38a.js.map"
+      "path---tags-markdown-450b902383613d55fefb.js",
+      "path---tags-markdown-450b902383613d55fefb.js.map"
     ],
     "component---src-templates-tags-js": [
       "component---src-templates-tags-js-8632dec7ce908e79a41e.js",
       "component---src-templates-tags-js-8632dec7ce908e79a41e.js.map"
     ],
     "path---tags": [
-      "path---tags-238babc380901b7c2627.js",
-      "path---tags-238babc380901b7c2627.js.map"
+      "path---tags-15fd74b9fbfbc4c70f7f.js",
+      "path---tags-15fd74b9fbfbc4c70f7f.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---posts-the-world-needs-another-post-about-dependency-injection-in-ruby-kor": [
-      "path---posts-the-world-needs-another-post-about-dependency-injection-in-ruby-kor-ddfd58086970afd1a0a3.js",
-      "path---posts-the-world-needs-another-post-about-dependency-injection-in-ruby-kor-ddfd58086970afd1a0a3.js.map"
+      "path---posts-the-world-needs-another-post-about-dependency-injection-in-ruby-kor-2874de8ace3c10796df0.js",
+      "path---posts-the-world-needs-another-post-about-dependency-injection-in-ruby-kor-2874de8ace3c10796df0.js.map"
     ],
     "path---tags-javascript": [
-      "path---tags-javascript-a4c3dc89e79ed4d68111.js",
-      "path---tags-javascript-a4c3dc89e79ed4d68111.js.map"
+      "path---tags-javascript-c4c662a0742eec7480e7.js",
+      "path---tags-javascript-c4c662a0742eec7480e7.js.map"
     ],
     "path---posts-javascript-roadmap-questions": [
-      "path---posts-javascript-roadmap-questions-6d31df48b47e1f448aa2.js",
-      "path---posts-javascript-roadmap-questions-6d31df48b47e1f448aa2.js.map"
+      "path---posts-javascript-roadmap-questions-05cf5986a9becb38083c.js",
+      "path---posts-javascript-roadmap-questions-05cf5986a9becb38083c.js.map"
+    ],
+    "path---posts-tdd-practice-tips": [
+      "path---posts-tdd-practice-tips-e710af11f5a1a58a4127.js",
+      "path---posts-tdd-practice-tips-e710af11f5a1a58a4127.js.map"
     ],
     "path---posts-hanami-vuejs-moneybook-frontend-1": [
-      "path---posts-hanami-vuejs-moneybook-frontend-1-795a97bb41aa27242e55.js",
-      "path---posts-hanami-vuejs-moneybook-frontend-1-795a97bb41aa27242e55.js.map"
+      "path---posts-hanami-vuejs-moneybook-frontend-1-1188380dbdfdc4fe0284.js",
+      "path---posts-hanami-vuejs-moneybook-frontend-1-1188380dbdfdc4fe0284.js.map"
     ],
     "path---tags-testing": [
-      "path---tags-testing-fa45912783e6ea454381.js",
-      "path---tags-testing-fa45912783e6ea454381.js.map"
+      "path---tags-testing-72049386cfb7c3e92a1f.js",
+      "path---tags-testing-72049386cfb7c3e92a1f.js.map"
     ],
     "path---tags-react": [
-      "path---tags-react-6ddb4069a2a09690a439.js",
-      "path---tags-react-6ddb4069a2a09690a439.js.map"
+      "path---tags-react-08891d46cdd47c835118.js",
+      "path---tags-react-08891d46cdd47c835118.js.map"
     ],
     "path---posts-jsr-questions-answers": [
-      "path---posts-jsr-questions-answers-125498d891f64862af4e.js",
-      "path---posts-jsr-questions-answers-125498d891f64862af4e.js.map"
+      "path---posts-jsr-questions-answers-b306464826045b407e32.js",
+      "path---posts-jsr-questions-answers-b306464826045b407e32.js.map"
     ],
     "path---tags-debugging": [
-      "path---tags-debugging-34a219d26d07c0afd7f2.js",
-      "path---tags-debugging-34a219d26d07c0afd7f2.js.map"
+      "path---tags-debugging-5e0b6ee2614ecfda312b.js",
+      "path---tags-debugging-5e0b6ee2614ecfda312b.js.map"
     ],
     "path---tags-vue-js": [
-      "path---tags-vue-js-52de1365d99474a74eec.js",
-      "path---tags-vue-js-52de1365d99474a74eec.js.map"
+      "path---tags-vue-js-9ed7de7725df57a50598.js",
+      "path---tags-vue-js-9ed7de7725df57a50598.js.map"
     ],
     "path---posts-hanami-webpack-config": [
-      "path---posts-hanami-webpack-config-bf3f675196c6fdb6b393.js",
-      "path---posts-hanami-webpack-config-bf3f675196c6fdb6b393.js.map"
+      "path---posts-hanami-webpack-config-4ce4dda708ae60be31fd.js",
+      "path---posts-hanami-webpack-config-4ce4dda708ae60be31fd.js.map"
     ],
     "path---posts-effective-python-review": [
-      "path---posts-effective-python-review-ec60f43995663dcf39e5.js",
-      "path---posts-effective-python-review-ec60f43995663dcf39e5.js.map"
+      "path---posts-effective-python-review-34500df2253470bd6cc8.js",
+      "path---posts-effective-python-review-34500df2253470bd6cc8.js.map"
     ],
     "path---posts-beginners-mind-kor": [
-      "path---posts-beginners-mind-kor-eb1711e16bc36c9d3779.js",
-      "path---posts-beginners-mind-kor-eb1711e16bc36c9d3779.js.map"
+      "path---posts-beginners-mind-kor-e37d3bcd55787344ce30.js",
+      "path---posts-beginners-mind-kor-e37d3bcd55787344ce30.js.map"
     ],
     "path---tags-oop": [
-      "path---tags-oop-14cca644d0cb117d4ffd.js",
-      "path---tags-oop-14cca644d0cb117d4ffd.js.map"
+      "path---tags-oop-d60b3cbfe8d7c5601a91.js",
+      "path---tags-oop-d60b3cbfe8d7c5601a91.js.map"
     ],
     "path---posts-how-do-you-take-an-app-from-no-tests-to-tdd-kor": [
-      "path---posts-how-do-you-take-an-app-from-no-tests-to-tdd-kor-fa2e35dce411db2034a9.js",
-      "path---posts-how-do-you-take-an-app-from-no-tests-to-tdd-kor-fa2e35dce411db2034a9.js.map"
+      "path---posts-how-do-you-take-an-app-from-no-tests-to-tdd-kor-024c580434e8b97b57fc.js",
+      "path---posts-how-do-you-take-an-app-from-no-tests-to-tdd-kor-024c580434e8b97b57fc.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-23755d096043b8c1e98b.js",
-      "component---src-templates-blog-post-js-23755d096043b8c1e98b.js.map"
+      "component---src-templates-blog-post-js-74d0512cb69f6956e04d.js",
+      "component---src-templates-blog-post-js-74d0512cb69f6956e04d.js.map"
     ],
     "path---tags-remote-job": [
-      "path---tags-remote-job-dffd73d1294cc974fcfe.js",
-      "path---tags-remote-job-dffd73d1294cc974fcfe.js.map"
+      "path---tags-remote-job-f0e5afeaee5f1465fda5.js",
+      "path---tags-remote-job-f0e5afeaee5f1465fda5.js.map"
     ],
     "path---tags-code-review": [
-      "path---tags-code-review-876ab6274930be96f69b.js",
-      "path---tags-code-review-876ab6274930be96f69b.js.map"
+      "path---tags-code-review-0adf7e7c50f66c55eec6.js",
+      "path---tags-code-review-0adf7e7c50f66c55eec6.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-2337785b82426475f71a.js",
       "component---src-layouts-index-js-2337785b82426475f71a.js.map"
     ],
     "path---posts-should-i-learn-cpp-or-python-kor": [
-      "path---posts-should-i-learn-cpp-or-python-kor-0020cbae8788986c712c.js",
-      "path---posts-should-i-learn-cpp-or-python-kor-0020cbae8788986c712c.js.map"
+      "path---posts-should-i-learn-cpp-or-python-kor-0340aaf113497e12bf9b.js",
+      "path---posts-should-i-learn-cpp-or-python-kor-0340aaf113497e12bf9b.js.map"
     ],
     "path---tags-graph-ql": [
-      "path---tags-graph-ql-3a00c01415823306a25f.js",
-      "path---tags-graph-ql-3a00c01415823306a25f.js.map"
+      "path---tags-graph-ql-09992db6dc6037540fa6.js",
+      "path---tags-graph-ql-09992db6dc6037540fa6.js.map"
     ],
     "path---posts-the-easiest-way-to-get-into-open-source-kor": [
-      "path---posts-the-easiest-way-to-get-into-open-source-kor-43a867e14a35bafc3e9e.js",
-      "path---posts-the-easiest-way-to-get-into-open-source-kor-43a867e14a35bafc3e9e.js.map"
+      "path---posts-the-easiest-way-to-get-into-open-source-kor-0dab6eba0d6c65513c75.js",
+      "path---posts-the-easiest-way-to-get-into-open-source-kor-0dab6eba0d6c65513c75.js.map"
     ],
     "path---tags-reading": [
-      "path---tags-reading-1433edfeb725d25382cd.js",
-      "path---tags-reading-1433edfeb725d25382cd.js.map"
+      "path---tags-reading-1f7dfeb0b1e9dc543a52.js",
+      "path---tags-reading-1f7dfeb0b1e9dc543a52.js.map"
     ],
     "path---index": [
-      "path---index-91d290a11fc88255ff3d.js",
-      "path---index-91d290a11fc88255ff3d.js.map"
+      "path---index-8ceaf29acfdd4018d72b.js",
+      "path---index-8ceaf29acfdd4018d72b.js.map"
     ],
     "path---tags-rails": [
-      "path---tags-rails-5eca84a9a83841e5f7f2.js",
-      "path---tags-rails-5eca84a9a83841e5f7f2.js.map"
+      "path---tags-rails-d1b5967faafe8ea7a2b1.js",
+      "path---tags-rails-d1b5967faafe8ea7a2b1.js.map"
     ],
     "path---posts-easylunch-api-devlog-2": [
-      "path---posts-easylunch-api-devlog-2-9d6fb9bce429d6428526.js",
-      "path---posts-easylunch-api-devlog-2-9d6fb9bce429d6428526.js.map"
+      "path---posts-easylunch-api-devlog-2-cf0f78d9576a1f1cf0aa.js",
+      "path---posts-easylunch-api-devlog-2-cf0f78d9576a1f1cf0aa.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-2e27da69fb9cb74212da.js",
       "component---src-pages-404-js-2e27da69fb9cb74212da.js.map"
     ],
     "path---tags-sinatra": [
-      "path---tags-sinatra-5fb55bb9e5f890a7fb25.js",
-      "path---tags-sinatra-5fb55bb9e5f890a7fb25.js.map"
+      "path---tags-sinatra-fefb39664bdb9759658a.js",
+      "path---tags-sinatra-fefb39664bdb9759658a.js.map"
     ],
     "commons": [
-      "commons-64005d93f8d5be45e350.js",
-      "commons-64005d93f8d5be45e350.js.map"
+      "commons-919d48d163b6f749e272.js",
+      "commons-919d48d163b6f749e272.js.map"
     ],
     "path---404-html": [
-      "path---404-html-a0e39f21c11f6a62c5ab.js",
-      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+      "path---404-html-1db04e5021b40904aca6.js",
+      "path---404-html-1db04e5021b40904aca6.js.map"
     ],
     "path---tags-webpack": [
-      "path---tags-webpack-ae9cb211e05ae941115c.js",
-      "path---tags-webpack-ae9cb211e05ae941115c.js.map"
+      "path---tags-webpack-5bb20350502dacfdee57.js",
+      "path---tags-webpack-5bb20350502dacfdee57.js.map"
     ],
     "path---tags-tools": [
-      "path---tags-tools-76f70fb1ad85be8725ec.js",
-      "path---tags-tools-76f70fb1ad85be8725ec.js.map"
+      "path---tags-tools-63444f4d722be77bfafa.js",
+      "path---tags-tools-63444f4d722be77bfafa.js.map"
+    ],
+    "path---tags-tdd": [
+      "path---tags-tdd-c52305f76b0540516bc7.js",
+      "path---tags-tdd-c52305f76b0540516bc7.js.map"
     ],
     "path---posts-i-am-a-puts-debuggerer-kor": [
-      "path---posts-i-am-a-puts-debuggerer-kor-56126a9119f033474b0c.js",
-      "path---posts-i-am-a-puts-debuggerer-kor-56126a9119f033474b0c.js.map"
+      "path---posts-i-am-a-puts-debuggerer-kor-303f307d01ba5842cf18.js",
+      "path---posts-i-am-a-puts-debuggerer-kor-303f307d01ba5842cf18.js.map"
     ],
     "path---posts-easylunch-api-devlog-1": [
-      "path---posts-easylunch-api-devlog-1-cdef164a5b5f2435b5f7.js",
-      "path---posts-easylunch-api-devlog-1-cdef164a5b5f2435b5f7.js.map"
+      "path---posts-easylunch-api-devlog-1-c6c22f199782e07a4de7.js",
+      "path---posts-easylunch-api-devlog-1-c6c22f199782e07a4de7.js.map"
     ],
     "path---posts-remote-the-book-review": [
-      "path---posts-remote-the-book-review-9b6330ba3c4555eecfe8.js",
-      "path---posts-remote-the-book-review-9b6330ba3c4555eecfe8.js.map"
+      "path---posts-remote-the-book-review-3eba52c20931bdb2d7e3.js",
+      "path---posts-remote-the-book-review-3eba52c20931bdb2d7e3.js.map"
     ],
     "path---posts-learning-by-helping-kor": [
-      "path---posts-learning-by-helping-kor-d7b1196ccab5b2a2140b.js",
-      "path---posts-learning-by-helping-kor-d7b1196ccab5b2a2140b.js.map"
+      "path---posts-learning-by-helping-kor-9adba1e9bb26871b5c0e.js",
+      "path---posts-learning-by-helping-kor-9adba1e9bb26871b5c0e.js.map"
     ],
     "app": [
-      "app-7fdecacb61b277bb0b13.js",
+      "app-244ba27dee1a6b7685df.js",
       "build-js-styles.css",
-      "app-7fdecacb61b277bb0b13.js.map",
+      "app-244ba27dee1a6b7685df.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-translation": [
-      "path---tags-translation-b5c1c982bdd3775178e4.js",
-      "path---tags-translation-b5c1c982bdd3775178e4.js.map"
+      "path---tags-translation-a45ccd1512fa172fd66e.js",
+      "path---tags-translation-a45ccd1512fa172fd66e.js.map"
     ],
     "path---tags-hanami": [
-      "path---tags-hanami-15a897affee47fc820d2.js",
-      "path---tags-hanami-15a897affee47fc820d2.js.map"
+      "path---tags-hanami-d2fb59c6d4dbd3eddae2.js",
+      "path---tags-hanami-d2fb59c6d4dbd3eddae2.js.map"
     ],
     "path---posts-easylunch-api-devlog-3": [
-      "path---posts-easylunch-api-devlog-3-4b618af23b0454202af5.js",
-      "path---posts-easylunch-api-devlog-3-4b618af23b0454202af5.js.map"
+      "path---posts-easylunch-api-devlog-3-e987310b5b8c138c89ba.js",
+      "path---posts-easylunch-api-devlog-3-e987310b5b8c138c89ba.js.map"
     ],
     "path---404": [
-      "path---404-a0e39f21c11f6a62c5ab.js",
-      "path---404-a0e39f21c11f6a62c5ab.js.map"
+      "path---404-1db04e5021b40904aca6.js",
+      "path---404-1db04e5021b40904aca6.js.map"
     ],
     "path---posts-hanami-vuejs-moneybook-frontend-2": [
-      "path---posts-hanami-vuejs-moneybook-frontend-2-8a25d1d16f035ff7fe34.js",
-      "path---posts-hanami-vuejs-moneybook-frontend-2-8a25d1d16f035ff7fe34.js.map"
+      "path---posts-hanami-vuejs-moneybook-frontend-2-2595005ed83a5b44a514.js",
+      "path---posts-hanami-vuejs-moneybook-frontend-2-2595005ed83a5b44a514.js.map"
     ],
     "path---posts-creating-new-blog-with-gatsby": [
-      "path---posts-creating-new-blog-with-gatsby-5241f850a50661687b71.js",
-      "path---posts-creating-new-blog-with-gatsby-5241f850a50661687b71.js.map"
+      "path---posts-creating-new-blog-with-gatsby-65c15309d4841fad9605.js",
+      "path---posts-creating-new-blog-with-gatsby-65c15309d4841fad9605.js.map"
     ],
     "path---posts-how-i-user-stackoverflow-kor": [
-      "path---posts-how-i-user-stackoverflow-kor-1403a98f8e88ea49b901.js",
-      "path---posts-how-i-user-stackoverflow-kor-1403a98f8e88ea49b901.js.map"
+      "path---posts-how-i-user-stackoverflow-kor-4a6d601e17a0a9c92d14.js",
+      "path---posts-how-i-user-stackoverflow-kor-4a6d601e17a0a9c92d14.js.map"
     ],
     "path---posts-boostnote-vs-notes-kor": [
-      "path---posts-boostnote-vs-notes-kor-86325323c0648f5a3f6f.js",
-      "path---posts-boostnote-vs-notes-kor-86325323c0648f5a3f6f.js.map"
+      "path---posts-boostnote-vs-notes-kor-9df04ff5188af90281b0.js",
+      "path---posts-boostnote-vs-notes-kor-9df04ff5188af90281b0.js.map"
     ],
     "path---tags-ruby": [
-      "path---tags-ruby-c04df3e50ded98de5f5f.js",
-      "path---tags-ruby-c04df3e50ded98de5f5f.js.map"
+      "path---tags-ruby-9424ddab291eca8e049d.js",
+      "path---tags-ruby-9424ddab291eca8e049d.js.map"
     ],
     "path---posts-simple-spa-application-with-sinatra": [
-      "path---posts-simple-spa-application-with-sinatra-3e0f0520b94d65fe7856.js",
-      "path---posts-simple-spa-application-with-sinatra-3e0f0520b94d65fe7856.js.map"
+      "path---posts-simple-spa-application-with-sinatra-d6e488f7c0b4983530fa.js",
+      "path---posts-simple-spa-application-with-sinatra-d6e488f7c0b4983530fa.js.map"
     ]
   }
 }
