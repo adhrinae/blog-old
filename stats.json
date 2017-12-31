@@ -65,8 +65,8 @@
       "component---src-templates-tags-js-9757dfb27b70ee677469.js.map"
     ],
     "path---tags": [
-      "path---tags-74cdaf7480f6ae365490.js",
-      "path---tags-74cdaf7480f6ae365490.js.map"
+      "path---tags-d736a08deeb0ababae90.js",
+      "path---tags-d736a08deeb0ababae90.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -77,8 +77,8 @@
       "path---posts-the-world-needs-another-post-about-dependency-injection-in-ruby-kor-4281440d5644fafb2c7b.js.map"
     ],
     "path---tags-javascript": [
-      "path---tags-javascript-082de54e7cdc3e9de290.js",
-      "path---tags-javascript-082de54e7cdc3e9de290.js.map"
+      "path---tags-javascript-0f2858243192b3c87d7c.js",
+      "path---tags-javascript-0f2858243192b3c87d7c.js.map"
     ],
     "path---posts-javascript-roadmap-questions": [
       "path---posts-javascript-roadmap-questions-6d31df48b47e1f448aa2.js",
@@ -97,8 +97,8 @@
       "path---tags-testing-bde2a09329bbe53f02d2.js.map"
     ],
     "path---tags-react": [
-      "path---tags-react-2714e706e14380941b42.js",
-      "path---tags-react-2714e706e14380941b42.js.map"
+      "path---tags-react-776804a42f2c93a72c1f.js",
+      "path---tags-react-776804a42f2c93a72c1f.js.map"
     ],
     "path---posts-jsr-questions-answers": [
       "path---posts-jsr-questions-answers-5dee83bf18c9efe6566c.js",
@@ -145,8 +145,8 @@
       "path---tags-code-review-876ab6274930be96f69b.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-2ad7e6704fb3bebca0ff.js",
-      "component---src-layouts-index-js-2ad7e6704fb3bebca0ff.js.map"
+      "component---src-layouts-index-js-613414522177e12ee15c.js",
+      "component---src-layouts-index-js-613414522177e12ee15c.js.map"
     ],
     "path---posts-should-i-learn-cpp-or-python-kor": [
       "path---posts-should-i-learn-cpp-or-python-kor-0020cbae8788986c712c.js",
@@ -165,8 +165,8 @@
       "path---tags-reading-5f976c5c88df1458d731.js.map"
     ],
     "path---index": [
-      "path---index-3a76e2167607e3a7d17a.js",
-      "path---index-3a76e2167607e3a7d17a.js.map"
+      "path---index-1db0f013a3050496f7d8.js",
+      "path---index-1db0f013a3050496f7d8.js.map"
     ],
     "path---tags-rails": [
       "path---tags-rails-10d23484bde4a1dfe7f1.js",
@@ -183,6 +183,10 @@
     "path---tags-sinatra": [
       "path---tags-sinatra-28865ac4f00a667df75a.js",
       "path---tags-sinatra-28865ac4f00a667df75a.js.map"
+    ],
+    "path---posts-mobx-basic-concepts": [
+      "path---posts-mobx-basic-concepts-1ed2a72d11cac4b8252a.js",
+      "path---posts-mobx-basic-concepts-1ed2a72d11cac4b8252a.js.map"
     ],
     "commons": [
       "commons-9675f4fa92fc083643a3.js",
@@ -212,6 +216,10 @@
       "path---posts-i-am-a-puts-debuggerer-kor-3eb940663a4a35c87fdf.js",
       "path---posts-i-am-a-puts-debuggerer-kor-3eb940663a4a35c87fdf.js.map"
     ],
+    "path---tags-mob-x": [
+      "path---tags-mob-x-461dba72e09c20520c6a.js",
+      "path---tags-mob-x-461dba72e09c20520c6a.js.map"
+    ],
     "path---posts-easylunch-api-devlog-1": [
       "path---posts-easylunch-api-devlog-1-cdef164a5b5f2435b5f7.js",
       "path---posts-easylunch-api-devlog-1-cdef164a5b5f2435b5f7.js.map"
@@ -225,9 +233,9 @@
       "path---posts-learning-by-helping-kor-d7b1196ccab5b2a2140b.js.map"
     ],
     "app": [
-      "app-66b6a24b542b4d462461.js",
+      "app-daf797032324b15fac9f.js",
       "build-js-styles.css",
-      "app-66b6a24b542b4d462461.js.map",
+      "app-daf797032324b15fac9f.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-translation": [
