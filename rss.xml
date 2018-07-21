@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rinae's blog]]></title><description><![CDATA[about Translation, Ruby, Javascript, Practical Dev etc.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Sat, 21 Jul 2018 08:19:53 GMT</lastBuildDate><item><title><![CDATA[[번역] 자바스크립트 & 타입스크립트의 순환 참조를 한방에 해결하는 방법]]></title><description><![CDATA[부제: 시행착오를 거쳐 모듈 로딩 순서를 이해하기 Michel Weststrate 의  How to fix nasty circular dependency issues once and for all in JavaScript & TypeScript…]]></description><link>https://adhrinae.github.io/posts/fix-circular-dependency-kr</link><guid isPermaLink="false">https://adhrinae.github.io/posts/fix-circular-dependency-kr</guid><pubDate>Sat, 21 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;부제: 시행착오를 거쳐 모듈 로딩 순서를 이해하기&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rinae's blog]]></title><description><![CDATA[about Translation, Ruby, Javascript, Practical Dev etc.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Sat, 21 Jul 2018 08:25:42 GMT</lastBuildDate><item><title><![CDATA[[번역] 자바스크립트 & 타입스크립트의 순환 참조를 한방에 해결하는 방법]]></title><description><![CDATA[부제: 시행착오를 거쳐 모듈 로딩 순서를 이해하기 Michel Weststrate 의  How to fix nasty circular dependency issues once and for all in JavaScript & TypeScript…]]></description><link>https://adhrinae.github.io/posts/fix-circular-dependency-kr</link><guid isPermaLink="false">https://adhrinae.github.io/posts/fix-circular-dependency-kr</guid><pubDate>Sat, 21 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;부제: 시행착오를 거쳐 모듈 로딩 순서를 이해하기&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://twitter.com/mweststrate&quot;&gt;Michel Weststrate&lt;/a&gt;의 &lt;a href=&quot;https://medium.com/visual-development/how-to-fix-nasty-circular-dependency-issues-once-and-for-all-in-javascript-typescript-a04c987cf0de&quot;&gt;How to fix nasty circular dependency issues once and for all in JavaScript &amp;#x26; TypeScript&lt;/a&gt;를 번역한 글입니다&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;제가 관리해왔던 많은 프로젝트들은 빠르거나 늦거나 언제나 같은 문제에 부딪혔습니다. 바로 순환 모듈 의존 문제입니다. &lt;em&gt;(역주: circular module dependency 를 순환 참조로 번역하자니 번역이 조금 이상하게 느껴지는데 일반적으로 많이 사용되고 있는 용어임을 감안하여 앞으로 순환 참조라는 용어를 사용하겠습니다. 피드백 환영합니다.)&lt;/em&gt; 순환 참조를 피하는 방법을 설명하는 모범 규약이나 전략들이 많이 있지만, 제대로 지속적이고 예측 가능한 방법으로 문제를 해결하는 방법은 거의 없었습니다. 사람들은 보통 ‘어쩌다 갑자기 작동하기를’ 빌면서 &lt;code class=&quot;language-text&quot;&gt;import&lt;/code&gt; 문이나 코드 블록을 이리저리 움직여봅니다. 사실 아래의 트윗을 보면 저만 고통받은건 아닌가 봅니다.&lt;/p&gt;
@@ -136,7 +136,38 @@
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt; 파일은 주요 시작점이 됩니다. &lt;code class=&quot;language-text&quot;&gt;internal.js&lt;/code&gt; 파일에서 내보낸 모든 모듈을 불러온 다음, 외부로 노출하고자 하는 것만 내보냅니다. 이 과정은 다른 사람들이 사용할 라이브러리를 배포할 때만 유효한 방법입니다. 따라서 이번 예제에서는 만들지 않고 넘어가겠습니다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;위의 규칙은 로컬 모듈에만 적용되어야 합니다. 외부 모듈 &lt;code class=&quot;language-text&quot;&gt;import&lt;/code&gt; 는 순환 참조 문제와 전혀 연관이 없기 때문에 그대로 두시면 됩니다. 우리의 데모 애플리케이션에 적용을 해보면 이렇게 바뀔겁니다.&lt;/p&gt;
-&lt;hr&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// -- app.js --&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AbstractNode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./internal&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;/* as is */&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// -- internal.js --&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./AbstractNode&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./Node&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./Leaf&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// -- AbstractNode.js --&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Node&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Leaf &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./internal&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AbstractNode&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/* as is */&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// -- Node.js --&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AbstractNode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./internal&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Node&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AbstractNode&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/* as is */&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// -- Leaf.js --&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AbstractNode &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./internal&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Leaf&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AbstractNode&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/* as is */&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;이 패턴을 처음 적용하면 굉장히 어색하게 느껴지실겁니다. 하지만 익숙해지기만 하면 몇 가지 큰 이득을 얻을 수 있습니다!&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;당연하지만 우리가 머리를 싸매던 문제가 해결되었습니다! &lt;a href=&quot;https://codesandbox.io/s/oqro83jpk6&quot;&gt;여기&lt;/a&gt;에 보이는 대로 우리의 앱은 아주 잘 돌아갑니다.&lt;/li&gt;
