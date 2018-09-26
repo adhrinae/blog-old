@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://adhrinae.github.io/sitemap.xml
+Host: https://adhrinae.github.io
