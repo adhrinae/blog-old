@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rinae's devlog]]></title><description><![CDATA[about Translation, Ruby, Javascript, Practical Dev etc.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Sun, 28 Oct 2018 12:21:16 GMT</lastBuildDate><item><title><![CDATA[[번역] 초보 프론트엔드 개발자들을 위한 Pub-Sub(Publish-Subscribe) 패턴을 알아보기]]></title><description><![CDATA[번역 머리말 이 글은  Hubert Zub 의  Why every beginner front-end developer should know publish-subscribe pattern…]]></description><link>https://adhrinae.github.io/posts/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-kr</link><guid isPermaLink="false">https://adhrinae.github.io/posts/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-kr</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;번역-머리말&quot;&gt;&lt;a href=&quot;#%EB%B2%88%EC%97%AD-%EB%A8%B8%EB%A6%AC%EB%A7%90&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;번역 머리말&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Rinae's devlog]]></title><description><![CDATA[about Translation, Ruby, Javascript, Practical Dev etc.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Tue, 30 Oct 2018 08:38:42 GMT</lastBuildDate><item><title><![CDATA[[번역] 초보 프론트엔드 개발자들을 위한 Pub-Sub(Publish-Subscribe) 패턴을 알아보기]]></title><description><![CDATA[번역 머리말 이 글은  Hubert Zub 의  Why every beginner front-end developer should know publish-subscribe pattern…]]></description><link>https://adhrinae.github.io/posts/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-kr</link><guid isPermaLink="false">https://adhrinae.github.io/posts/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-kr</guid><pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;번역-머리말&quot;&gt;&lt;a href=&quot;#%EB%B2%88%EC%97%AD-%EB%A8%B8%EB%A6%AC%EB%A7%90&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;번역 머리말&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;이 글은 &lt;a href=&quot;https://softwarehut.com/blog/author/hubert-zub/&quot;&gt;Hubert Zub&lt;/a&gt;의 &lt;a href=&quot;https://itnext.io/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-72a12cd68d44&quot;&gt;Why every beginner front-end developer should know publish-subscribe pattern?&lt;/a&gt;을 번역한 글입니다.&lt;/li&gt;
 &lt;li&gt;일부 삽화의 내용은 직접 번역하여 새로 첨부했습니다. 가독성에 문제가 있다면 피드백 부탁드립니다.&lt;/li&gt;
@@ -19,7 +19,7 @@
 &lt;hr&gt;
 &lt;p&gt;웹 애플리케이션(웹 앱)은 선형적으로 동작하는 일이 거의 없습니다. 사실 어떤 웹 앱이든 많은 액션은 갑자기 (때로는 기대하지 않았을 때나 자발적으로) 발생합니다.&lt;/p&gt;
 &lt;p&gt;앱은 네트워크 이벤트, 사용자의 조작, 타이밍이 설정된 동작 등 여러 종류의 비동기적인 동작에 적절하게 응답해야 합니다. 그렇게 갑자기 &quot;비동기&quot; 와 &quot;경합 상태&quot; 라 불리는 괴물들이 문을 두드립니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cl.ly/a6771d0e8c73/pub-sub1.png&quot; alt=&quot;event flow&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cl.ly/c5b573ef01c7/pub-sub-1-modified.png&quot; alt=&quot;event flow&quot;&gt;&lt;/p&gt;
 &lt;p&gt;멋지게 모듈화된 코드가 비동기 코드라는 못난 배우자와 짝을 맺어야하는 상황이 되었습니다. 이제 가려운 기분이 어디서 오는지 명확해졌습니다. &lt;em&gt;&quot;대체 이놈의 비동기 코드를 어느 부분에 두어야 하지?&quot;&lt;/em&gt; 라고 어려운 질문이 고개를 들기 시작합니다.&lt;/p&gt;
 &lt;p&gt;지금 앱은 아름답게 블록 단위로 구성되어 있을 겁니다. 페이지 이동 및 컨텐츠를 구성하는 컴포넌트는 적절한 디렉토리에 깔끔하게 놓일 수 있고, 자그마한 헬퍼 스크립트 파일들은 코드를 반복해서 쓰지 않고 자잘한 일들을 처리할 수 있습니다. 모든 것은 &lt;code class=&quot;language-text&quot;&gt;app.js&lt;/code&gt; 라는 하나의 엔트리 파일로 관리되고 구동됩니다. 깔끔하죠.&lt;/p&gt;
 &lt;p&gt;하지만 여러분의 목표는 비동기 코드를 &lt;strong&gt;앱의 한 부분에서 실행하여 처리하고 다른 부분으로 보내는 것입니다.&lt;/strong&gt;&lt;/p&gt;
@@ -45,8 +45,7 @@
 &lt;p&gt;&lt;img src=&quot;https://cl.ly/c285ab16c86f/pub-sub-03.png&quot; alt=&quot;what we are going to build&quot;&gt;&lt;/p&gt;
 &lt;p&gt;물론 약간 욕심을 가지고 조금 기능을 추가할 예정입니다. 점찍어둔 장소의 리스트를 로컬 스토리지에 저장하려 합니다.&lt;/p&gt;
 &lt;p&gt;이제 세부 사항을 기반으로 앱의 기본적인 동작 흐름을 차트로 그려보겠습니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cl.ly/b9489c05e9e3/pub-sub2.png&quot; alt=&quot;our first user story&quot;&gt;
-[참고: 도시 이름을 찾는 방법은 아주 어려운게 아닙니다. 아주 쉬운 Google Maps API 가 제공됩니다. &lt;a href=&quot;https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding&quot;&gt;여기서 확인해보세요!&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cl.ly/4a2966b1b79a/pub-sub-2-modified.png&quot; alt=&quot;our first user story&quot;&gt;&lt;/p&gt;
 &lt;p&gt;보시다시피 그리 복잡하진 않을겁니다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;튜토리얼을 간략히 하기 위해 아래의 예는 어떠한 프레임워크나 UI 라이브러리도 사용하지 않을 예정입니다. 그저 바닐라 자바스크립트만 들어있습니다. 그리고 Google Maps API 를 일부 사용합니다. 비슷한 앱을 직접 만들고자 하시면 &lt;a href=&quot;https://cloud.google.com/maps-platform/#get-started&quot;&gt;이 링크를 통해&lt;/a&gt; API 키를 등록하셔야 합니다.&lt;/p&gt;
@@ -132,7 +131,8 @@
 &lt;p&gt;&lt;img src=&quot;https://cl.ly/d20eba6d7fbd/pub-sub-05.png&quot; alt=&quot;what we are going to build next&quot;&gt;&lt;/p&gt;
 &lt;p&gt;첫 번째로 우리는 사이드바에 표시 된 장소들의 리스트를 놓고, 두 번째로 Google API 를 사용하여 도시 이름을 표시하고 싶습니다. 여기서 비동기 메커니즘(동작 원리, mechanism)이 사용됩니다.&lt;/p&gt;
 &lt;p&gt;그러면 새로운 플로우차트는 이렇게 됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cl.ly/101c0c4a6cbe/pub-sub3.png&quot; alt=&quot;next user story&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cl.ly/fced73ac4cb7/pub-sub-3-modified.png&quot; alt=&quot;next user story&quot;&gt;
+[참고: 도시 이름을 찾는 방법은 아주 어려운게 아닙니다. 아주 쉬운 Google Maps API 가 제공됩니다. &lt;a href=&quot;https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding&quot;&gt;여기서 확인해보세요!&lt;/a&gt;]&lt;/p&gt;
 &lt;p&gt;Google API 로 도시 이름을 가져올 때 주요한 특징이 있습니다. &lt;strong&gt;즉시 가져오는게 아니라는 겁니다.&lt;/strong&gt; Google 의 자바스크립트 라이브러리에서 적절한 서비스를 호출하면 응답이 돌아올 때까지 약간의 시간이 걸립니다. 덕분에 조금 혼란스럽지만, 배우는데 확실히 도움이 되는 문제가 나타났습니다.&lt;/p&gt;
 &lt;p&gt;UI 이야기로 돌아가서 확실히 보이는 문제를 하나 짚어보겠습니다. 보기에는 두 개로 나뉜 인터페이스 영역이 있습니다. 사이드바와 메인 컨텐츠 영역입니다. 절대로 둘을 한꺼번에 다루는 &lt;strong&gt;거대한 코드 덩어리 하나만 작성하면 안됩니다.&lt;/strong&gt; 이유는 명백합니다. 만약 시간이 조금 흘러 네 개의 컴포넌트를 만들어야 한다면? 아니면 여섯 개? 백 개가 된다면? 그러므로 코드를 조각조각 나누어야 합니다. 아래의 방식으로 자바스크립트 파일을 두 개로 나눌 것입니다. 하나는 사이드바를 담당하고, 다른 하나는 지도 부분을 담당합니다. 그런데 어떤 파일이 지역을 담아놓는 배열을 다루어야 할까요?&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://cl.ly/9f1abbcd0705/pub-sub4.png&quot; alt=&quot;data handling approaches&quot;&gt;&lt;/p&gt;
@@ -4594,8 +4594,8 @@ pre[class*=&quot;language-&quot;] .number &lt;/span&gt;&lt;span class=&quot;toke
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Vehicle Class&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-07-16-sc1-2e83a320a96db4a01c9b4553157907f6-9805c.png&quot;
-        srcset=&quot;/static/2017-07-16-sc1-2e83a320a96db4a01c9b4553157907f6-9805c.png 136w&quot;
+        src=&quot;/static/2e83a320a96db4a01c9b4553157907f6/9805c/2017-07-16-sc1.png&quot;
+        srcset=&quot;/static/2e83a320a96db4a01c9b4553157907f6/9805c/2017-07-16-sc1.png 136w&quot;
         sizes=&quot;(max-width: 136px) 100vw, 136px&quot;
       /&gt;
     &lt;/span&gt;
@@ -4616,10 +4616,10 @@ pre[class*=&quot;language-&quot;] .number &lt;/span&gt;&lt;span class=&quot;toke
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Vehicle with inheritance&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-07-16-sc2-fa7f9df8054d6743399cc2574b2c80e3-11014.png&quot;
-        srcset=&quot;/static/2017-07-16-sc2-fa7f9df8054d6743399cc2574b2c80e3-20168.png 198w,
-/static/2017-07-16-sc2-fa7f9df8054d6743399cc2574b2c80e3-b3d3b.png 395w,
-/static/2017-07-16-sc2-fa7f9df8054d6743399cc2574b2c80e3-11014.png 424w&quot;
+        src=&quot;/static/fa7f9df8054d6743399cc2574b2c80e3/11014/2017-07-16-sc2.png&quot;
+        srcset=&quot;/static/fa7f9df8054d6743399cc2574b2c80e3/20168/2017-07-16-sc2.png 198w,
+/static/fa7f9df8054d6743399cc2574b2c80e3/b3d3b/2017-07-16-sc2.png 395w,
+/static/fa7f9df8054d6743399cc2574b2c80e3/11014/2017-07-16-sc2.png 424w&quot;
         sizes=&quot;(max-width: 424px) 100vw, 424px&quot;
       /&gt;
     &lt;/span&gt;
@@ -4640,10 +4640,10 @@ pre[class*=&quot;language-&quot;] .number &lt;/span&gt;&lt;span class=&quot;toke
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Vehicle with even more inheritance&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-07-16-sc3-ea0481feb5f8dca30a8d25a48403b0b1-7f0b2.png&quot;
-        srcset=&quot;/static/2017-07-16-sc3-ea0481feb5f8dca30a8d25a48403b0b1-8c8bd.png 198w,
-/static/2017-07-16-sc3-ea0481feb5f8dca30a8d25a48403b0b1-e07aa.png 395w,
-/static/2017-07-16-sc3-ea0481feb5f8dca30a8d25a48403b0b1-7f0b2.png 562w&quot;
+        src=&quot;/static/ea0481feb5f8dca30a8d25a48403b0b1/7f0b2/2017-07-16-sc3.png&quot;
+        srcset=&quot;/static/ea0481feb5f8dca30a8d25a48403b0b1/8c8bd/2017-07-16-sc3.png 198w,
+/static/ea0481feb5f8dca30a8d25a48403b0b1/e07aa/2017-07-16-sc3.png 395w,
+/static/ea0481feb5f8dca30a8d25a48403b0b1/7f0b2/2017-07-16-sc3.png 562w&quot;
         sizes=&quot;(max-width: 562px) 100vw, 562px&quot;
       /&gt;
     &lt;/span&gt;
@@ -4779,9 +4779,9 @@ pre[class*=&quot;language-&quot;] .number &lt;/span&gt;&lt;span class=&quot;toke
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Composition in action&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-07-16-sc4-b6caad80a0028f7518410ecd07b25a64-a1aef.png&quot;
-        srcset=&quot;/static/2017-07-16-sc4-b6caad80a0028f7518410ecd07b25a64-c12ac.png 198w,
-/static/2017-07-16-sc4-b6caad80a0028f7518410ecd07b25a64-a1aef.png 373w&quot;
+        src=&quot;/static/b6caad80a0028f7518410ecd07b25a64/a1aef/2017-07-16-sc4.png&quot;
+        srcset=&quot;/static/b6caad80a0028f7518410ecd07b25a64/c12ac/2017-07-16-sc4.png 198w,
+/static/b6caad80a0028f7518410ecd07b25a64/a1aef/2017-07-16-sc4.png 373w&quot;
         sizes=&quot;(max-width: 373px) 100vw, 373px&quot;
       /&gt;
     &lt;/span&gt;
@@ -5725,12 +5725,12 @@ methods&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span c
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2017 04 30 sc1&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-04-30-sc1-9100a80c23929f21d4e5ca6a8de99a9e-ffc88.png&quot;
-        srcset=&quot;/static/2017-04-30-sc1-9100a80c23929f21d4e5ca6a8de99a9e-d16f8.png 198w,
-/static/2017-04-30-sc1-9100a80c23929f21d4e5ca6a8de99a9e-f21b1.png 395w,
-/static/2017-04-30-sc1-9100a80c23929f21d4e5ca6a8de99a9e-ffc88.png 790w,
-/static/2017-04-30-sc1-9100a80c23929f21d4e5ca6a8de99a9e-81e7e.png 1185w,
-/static/2017-04-30-sc1-9100a80c23929f21d4e5ca6a8de99a9e-53295.png 1516w&quot;
+        src=&quot;/static/9100a80c23929f21d4e5ca6a8de99a9e/ffc88/2017-04-30-sc1.png&quot;
+        srcset=&quot;/static/9100a80c23929f21d4e5ca6a8de99a9e/d16f8/2017-04-30-sc1.png 198w,
+/static/9100a80c23929f21d4e5ca6a8de99a9e/f21b1/2017-04-30-sc1.png 395w,
+/static/9100a80c23929f21d4e5ca6a8de99a9e/ffc88/2017-04-30-sc1.png 790w,
+/static/9100a80c23929f21d4e5ca6a8de99a9e/81e7e/2017-04-30-sc1.png 1185w,
+/static/9100a80c23929f21d4e5ca6a8de99a9e/53295/2017-04-30-sc1.png 1516w&quot;
         sizes=&quot;(max-width: 790px) 100vw, 790px&quot;
       /&gt;
     &lt;/span&gt;
@@ -6913,12 +6913,12 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;The Flow&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-04-04-1b52eac1f90484ea982f2dbab689b235-ffc88.png&quot;
-        srcset=&quot;/static/2017-04-04-1b52eac1f90484ea982f2dbab689b235-d16f8.png 198w,
-/static/2017-04-04-1b52eac1f90484ea982f2dbab689b235-f21b1.png 395w,
-/static/2017-04-04-1b52eac1f90484ea982f2dbab689b235-ffc88.png 790w,
-/static/2017-04-04-1b52eac1f90484ea982f2dbab689b235-81e7e.png 1185w,
-/static/2017-04-04-1b52eac1f90484ea982f2dbab689b235-c6d11.png 1200w&quot;
+        src=&quot;/static/1b52eac1f90484ea982f2dbab689b235/ffc88/2017-04-04.png&quot;
+        srcset=&quot;/static/1b52eac1f90484ea982f2dbab689b235/d16f8/2017-04-04.png 198w,
+/static/1b52eac1f90484ea982f2dbab689b235/f21b1/2017-04-04.png 395w,
+/static/1b52eac1f90484ea982f2dbab689b235/ffc88/2017-04-04.png 790w,
+/static/1b52eac1f90484ea982f2dbab689b235/81e7e/2017-04-04.png 1185w,
+/static/1b52eac1f90484ea982f2dbab689b235/c6d11/2017-04-04.png 1200w&quot;
         sizes=&quot;(max-width: 790px) 100vw, 790px&quot;
       /&gt;
     &lt;/span&gt;
@@ -7522,10 +7522,10 @@ app/controllers/users_controller.rb:9:in `index&amp;#39;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2017 02 04 sc1&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-02-04-sc1-9dcb9be1a8d06e20a0c943b7fe6c9637-9c10f.png&quot;
-        srcset=&quot;/static/2017-02-04-sc1-9dcb9be1a8d06e20a0c943b7fe6c9637-0ca6d.png 198w,
-/static/2017-02-04-sc1-9dcb9be1a8d06e20a0c943b7fe6c9637-45e8e.png 395w,
-/static/2017-02-04-sc1-9dcb9be1a8d06e20a0c943b7fe6c9637-9c10f.png 580w&quot;
+        src=&quot;/static/9dcb9be1a8d06e20a0c943b7fe6c9637/9c10f/2017-02-04-sc1.png&quot;
+        srcset=&quot;/static/9dcb9be1a8d06e20a0c943b7fe6c9637/0ca6d/2017-02-04-sc1.png 198w,
+/static/9dcb9be1a8d06e20a0c943b7fe6c9637/45e8e/2017-02-04-sc1.png 395w,
+/static/9dcb9be1a8d06e20a0c943b7fe6c9637/9c10f/2017-02-04-sc1.png 580w&quot;
         sizes=&quot;(max-width: 580px) 100vw, 580px&quot;
       /&gt;
     &lt;/span&gt;
@@ -7646,11 +7646,11 @@ app/controllers/users_controller.rb:9:in `index&amp;#39;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2017 02 04 sc2&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-02-04-sc2-0f2ed11f15088cd9b3c54a8078fb8ed1-ffc88.png&quot;
-        srcset=&quot;/static/2017-02-04-sc2-0f2ed11f15088cd9b3c54a8078fb8ed1-d16f8.png 198w,
-/static/2017-02-04-sc2-0f2ed11f15088cd9b3c54a8078fb8ed1-f21b1.png 395w,
-/static/2017-02-04-sc2-0f2ed11f15088cd9b3c54a8078fb8ed1-ffc88.png 790w,
-/static/2017-02-04-sc2-0f2ed11f15088cd9b3c54a8078fb8ed1-ee9f1.png 994w&quot;
+        src=&quot;/static/0f2ed11f15088cd9b3c54a8078fb8ed1/ffc88/2017-02-04-sc2.png&quot;
+        srcset=&quot;/static/0f2ed11f15088cd9b3c54a8078fb8ed1/d16f8/2017-02-04-sc2.png 198w,
+/static/0f2ed11f15088cd9b3c54a8078fb8ed1/f21b1/2017-02-04-sc2.png 395w,
+/static/0f2ed11f15088cd9b3c54a8078fb8ed1/ffc88/2017-02-04-sc2.png 790w,
+/static/0f2ed11f15088cd9b3c54a8078fb8ed1/ee9f1/2017-02-04-sc2.png 994w&quot;
         sizes=&quot;(max-width: 790px) 100vw, 790px&quot;
       /&gt;
     &lt;/span&gt;
@@ -7745,10 +7745,10 @@ reached the bottom
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2017 01 26 sc1&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-01-26-sc1-0b41e997207a170368c666aab1b250d5-806d2.png&quot;
-        srcset=&quot;/static/2017-01-26-sc1-0b41e997207a170368c666aab1b250d5-e0e3b.png 198w,
-/static/2017-01-26-sc1-0b41e997207a170368c666aab1b250d5-4f7b9.png 395w,
-/static/2017-01-26-sc1-0b41e997207a170368c666aab1b250d5-806d2.png 492w&quot;
+        src=&quot;/static/0b41e997207a170368c666aab1b250d5/806d2/2017-01-26-sc1.png&quot;
+        srcset=&quot;/static/0b41e997207a170368c666aab1b250d5/e0e3b/2017-01-26-sc1.png 198w,
+/static/0b41e997207a170368c666aab1b250d5/4f7b9/2017-01-26-sc1.png 395w,
+/static/0b41e997207a170368c666aab1b250d5/806d2/2017-01-26-sc1.png 492w&quot;
         sizes=&quot;(max-width: 492px) 100vw, 492px&quot;
       /&gt;
     &lt;/span&gt;
@@ -7775,10 +7775,10 @@ reached the bottom
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;2017 01 26 sc2&quot;
         title=&quot;&quot;
-        src=&quot;/static/2017-01-26-sc2-bb2e2064049183892cdc8f6790ab92a8-7203d.png&quot;
-        srcset=&quot;/static/2017-01-26-sc2-bb2e2064049183892cdc8f6790ab92a8-93713.png 198w,
-/static/2017-01-26-sc2-bb2e2064049183892cdc8f6790ab92a8-ae0be.png 395w,
-/static/2017-01-26-sc2-bb2e2064049183892cdc8f6790ab92a8-7203d.png 475w&quot;
+        src=&quot;/static/bb2e2064049183892cdc8f6790ab92a8/7203d/2017-01-26-sc2.png&quot;
+        srcset=&quot;/static/bb2e2064049183892cdc8f6790ab92a8/93713/2017-01-26-sc2.png 198w,
+/static/bb2e2064049183892cdc8f6790ab92a8/ae0be/2017-01-26-sc2.png 395w,
+/static/bb2e2064049183892cdc8f6790ab92a8/7203d/2017-01-26-sc2.png 475w&quot;
         sizes=&quot;(max-width: 475px) 100vw, 475px&quot;
       /&gt;
     &lt;/span&gt;
@@ -8082,10 +8082,10 @@ puts numbers&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;slack_conversation&quot;
         title=&quot;&quot;
-        src=&quot;/static/2016-12-31-sc1-a13427f93ee2f60a5107ed26df13cfdc-959a9.png&quot;
-        srcset=&quot;/static/2016-12-31-sc1-a13427f93ee2f60a5107ed26df13cfdc-5510e.png 198w,
-/static/2016-12-31-sc1-a13427f93ee2f60a5107ed26df13cfdc-f5670.png 395w,
-/static/2016-12-31-sc1-a13427f93ee2f60a5107ed26df13cfdc-959a9.png 544w&quot;
+        src=&quot;/static/a13427f93ee2f60a5107ed26df13cfdc/959a9/2016-12-31-sc1.png&quot;
+        srcset=&quot;/static/a13427f93ee2f60a5107ed26df13cfdc/5510e/2016-12-31-sc1.png 198w,
+/static/a13427f93ee2f60a5107ed26df13cfdc/f5670/2016-12-31-sc1.png 395w,
+/static/a13427f93ee2f60a5107ed26df13cfdc/959a9/2016-12-31-sc1.png 544w&quot;
         sizes=&quot;(max-width: 544px) 100vw, 544px&quot;
       /&gt;
     &lt;/span&gt;
@@ -8254,10 +8254,10 @@ puts numbers&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;현재 레일즈 커뮤니티&quot;
         title=&quot;&quot;
-        src=&quot;/static/2016-12-03-sc1-f0f9a1c45e0435424b34e6518f9574d9-f36a6.jpg&quot;
-        srcset=&quot;/static/2016-12-03-sc1-f0f9a1c45e0435424b34e6518f9574d9-28fc4.jpg 198w,
-/static/2016-12-03-sc1-f0f9a1c45e0435424b34e6518f9574d9-44f6c.jpg 395w,
-/static/2016-12-03-sc1-f0f9a1c45e0435424b34e6518f9574d9-f36a6.jpg 599w&quot;
+        src=&quot;/static/f0f9a1c45e0435424b34e6518f9574d9/f36a6/2016-12-03-sc1.jpg&quot;
+        srcset=&quot;/static/f0f9a1c45e0435424b34e6518f9574d9/28fc4/2016-12-03-sc1.jpg 198w,
+/static/f0f9a1c45e0435424b34e6518f9574d9/44f6c/2016-12-03-sc1.jpg 395w,
+/static/f0f9a1c45e0435424b34e6518f9574d9/f36a6/2016-12-03-sc1.jpg 599w&quot;
         sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
       /&gt;
     &lt;/span&gt;
@@ -8352,9 +8352,9 @@ root to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span c
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Bookshelf Title&quot;
         title=&quot;&quot;
-        src=&quot;/static/2016-12-03-sc2-3a065f050faf7e4f996a919b015fb34b-8524e.png&quot;
-        srcset=&quot;/static/2016-12-03-sc2-3a065f050faf7e4f996a919b015fb34b-dc079.png 198w,
-/static/2016-12-03-sc2-3a065f050faf7e4f996a919b015fb34b-8524e.png 358w&quot;
+        src=&quot;/static/3a065f050faf7e4f996a919b015fb34b/8524e/2016-12-03-sc2.png&quot;
+        srcset=&quot;/static/3a065f050faf7e4f996a919b015fb34b/dc079/2016-12-03-sc2.png 198w,
+/static/3a065f050faf7e4f996a919b015fb34b/8524e/2016-12-03-sc2.png 358w&quot;
         sizes=&quot;(max-width: 358px) 100vw, 358px&quot;
       /&gt;
     &lt;/span&gt;
@@ -8446,9 +8446,9 @@ $ bundle exec hanami db migrate&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Bookshelf list&quot;
         title=&quot;&quot;
-        src=&quot;/static/2016-12-03-sc3-58eb0336ccd6468d50eb76c6d049377e-3fe9a.png&quot;
-        srcset=&quot;/static/2016-12-03-sc3-58eb0336ccd6468d50eb76c6d049377e-54c53.png 198w,
-/static/2016-12-03-sc3-58eb0336ccd6468d50eb76c6d049377e-3fe9a.png 385w&quot;
+        src=&quot;/static/58eb0336ccd6468d50eb76c6d049377e/3fe9a/2016-12-03-sc3.png&quot;
+        srcset=&quot;/static/58eb0336ccd6468d50eb76c6d049377e/54c53/2016-12-03-sc3.png 198w,
+/static/58eb0336ccd6468d50eb76c6d049377e/3fe9a/2016-12-03-sc3.png 385w&quot;
         sizes=&quot;(max-width: 385px) 100vw, 385px&quot;
       /&gt;
     &lt;/span&gt;
@@ -9159,11 +9159,11 @@ nvPY로 유사한 인터페이스의 심플노트 싱크는 가능하지만, 드
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;nvALT로 제목을 모두 수정한 후&quot;
         title=&quot;&quot;
-        src=&quot;/static/2016-08-04-sc1-a7a49eb313364162edf3aaac6c78bea1-ffc88.png&quot;
-        srcset=&quot;/static/2016-08-04-sc1-a7a49eb313364162edf3aaac6c78bea1-d16f8.png 198w,
-/static/2016-08-04-sc1-a7a49eb313364162edf3aaac6c78bea1-f21b1.png 395w,
-/static/2016-08-04-sc1-a7a49eb313364162edf3aaac6c78bea1-ffc88.png 790w,
-/static/2016-08-04-sc1-a7a49eb313364162edf3aaac6c78bea1-a9d0a.png 950w&quot;
+        src=&quot;/static/a7a49eb313364162edf3aaac6c78bea1/ffc88/2016-08-04-sc1.png&quot;
+        srcset=&quot;/static/a7a49eb313364162edf3aaac6c78bea1/d16f8/2016-08-04-sc1.png 198w,
+/static/a7a49eb313364162edf3aaac6c78bea1/f21b1/2016-08-04-sc1.png 395w,
+/static/a7a49eb313364162edf3aaac6c78bea1/ffc88/2016-08-04-sc1.png 790w,
+/static/a7a49eb313364162edf3aaac6c78bea1/a9d0a/2016-08-04-sc1.png 950w&quot;
         sizes=&quot;(max-width: 790px) 100vw, 790px&quot;
       /&gt;
     &lt;/span&gt;
@@ -9217,12 +9217,12 @@ post &amp;#39;/members&amp;#39; =&amp;gt; &amp;#39;members#add_member&amp;#39;, 
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;기존에 작성된 DB 다이어그램&quot;
         title=&quot;&quot;
-        src=&quot;/static/2016-08-02-sc1-24c66a374eb8b785c331891b9eeaf950-ffc88.png&quot;
-        srcset=&quot;/static/2016-08-02-sc1-24c66a374eb8b785c331891b9eeaf950-d16f8.png 198w,
-/static/2016-08-02-sc1-24c66a374eb8b785c331891b9eeaf950-f21b1.png 395w,
-/static/2016-08-02-sc1-24c66a374eb8b785c331891b9eeaf950-ffc88.png 790w,
-/static/2016-08-02-sc1-24c66a374eb8b785c331891b9eeaf950-81e7e.png 1185w,
-/static/2016-08-02-sc1-24c66a374eb8b785c331891b9eeaf950-14df9.png 1293w&quot;
+        src=&quot;/static/24c66a374eb8b785c331891b9eeaf950/ffc88/2016-08-02-sc1.png&quot;
+        srcset=&quot;/static/24c66a374eb8b785c331891b9eeaf950/d16f8/2016-08-02-sc1.png 198w,
+/static/24c66a374eb8b785c331891b9eeaf950/f21b1/2016-08-02-sc1.png 395w,
+/static/24c66a374eb8b785c331891b9eeaf950/ffc88/2016-08-02-sc1.png 790w,
+/static/24c66a374eb8b785c331891b9eeaf950/81e7e/2016-08-02-sc1.png 1185w,
+/static/24c66a374eb8b785c331891b9eeaf950/14df9/2016-08-02-sc1.png 1293w&quot;
         sizes=&quot;(max-width: 790px) 100vw, 790px&quot;
       /&gt;
     &lt;/span&gt;
