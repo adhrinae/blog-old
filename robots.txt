@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://adhrinae.github.io/sitemap.xml
-Host: https://adhrinae.github.io
+Sitemap: https://rinae.dev/sitemap.xml
+Host: https://rinae.dev
